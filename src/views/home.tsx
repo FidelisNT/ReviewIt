@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { House, Search, ChatSquareText, PersonCircle } from 'react-bootstrap-icons';
 
 const HomePage: React.FC = () => {
   return (

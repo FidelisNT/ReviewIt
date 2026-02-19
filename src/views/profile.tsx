@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { 
-  House, Search, ChatSquareText, PersonCircle, 
+  PersonCircle, 
   ThreeDotsVertical, ArrowRight 
 } from 'react-bootstrap-icons';
 import Logo from '/Logo-reviewit.png'; // Ensure this path is correct

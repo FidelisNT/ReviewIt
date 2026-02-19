@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  House, Search, ChatSquareText, PersonCircle, 
   StarFill, ThreeDotsVertical 
 } from 'react-bootstrap-icons';
 import Logo from '/Logo-reviewit.png'; // Ensure this path is correct
