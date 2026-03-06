@@ -1,4 +1,3 @@
-import React from 'react';
 import './footer.css';
 import { NavLink } from 'react-router-dom';
 import Logo from '/Logo-reviewit.svg'; // Ensure this path is correct
