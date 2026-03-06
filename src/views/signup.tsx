@@ -83,7 +83,7 @@ const SignupPage: React.FC = () => {
         <hr className="mt-5 mb-2" style={{ opacity: 0.1 }} />
         <div>Already have an account?
           <Link to="/login">
-            <div style={{ display: "inline" }}><a> Sign-up</a></div>
+            <div style={{ display: "inline", marginLeft: '5px' }}><a>Sign-in</a></div>
           </Link>
         </div>
       </div>

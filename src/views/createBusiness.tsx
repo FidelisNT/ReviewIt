@@ -21,7 +21,7 @@ const CreateBusinessPage: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid vh-100 d-flex justify-content-center align-items-center bg-light">
+    <div className="container-fluid vh-100 d-flex justify-content-center align-items-center bg-light main">
       <div 
         className="card shadow-lg p-4 position-relative" 
         style={{ 

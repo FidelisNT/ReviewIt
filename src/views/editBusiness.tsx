@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { 
   PersonCircle, 
-  ThreeDotsVertical, CameraFill 
+  CameraFill 
 } from 'react-bootstrap-icons';
-import Logo from '/Logo-reviewit.png'; // Ensure this path is correct
 
 
 const EditBusinessPage: React.FC = () => {
@@ -21,15 +20,7 @@ const EditBusinessPage: React.FC = () => {
   };
 
   return (
-    <div className="d-flex flex-column vh-100 bg-white">
-      
-      {/* Top Header */}
-      <div className="px-3 py-2 border-bottom d-flex align-items-center justify-content-between">
-        <div className="d-flex align-items-center">
-            <img src={Logo} className="logo" alt="Vite logo" style={{ width: '6rem', height: 'auto'}} />
-        </div>
-        <ThreeDotsVertical size={20} className="text-secondary" />
-      </div>
+    <div className="d-flex flex-column vh-100 bg-white main" style={{marginTop: '70px'}}>
 
       <div className="flex-grow-1 overflow-auto p-4">
         <h3 className="text-center mb-4" style={{ color: '#3b3b98' }}>Edit Business</h3>

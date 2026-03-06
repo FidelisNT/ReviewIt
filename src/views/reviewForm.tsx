@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  StarFill, ThreeDotsVertical 
+  StarFill 
 } from 'react-bootstrap-icons';
-import Logo from '/Logo-reviewit.png'; // Ensure this path is correct
 
 const ReviewForm: React.FC = () => {
   const [rating, setRating] = useState<number>(4);
@@ -14,15 +13,7 @@ const ReviewForm: React.FC = () => {
   };
 
   return (
-    <div className="d-flex flex-column vh-100 bg-white">
-      
-      {/* Top Header */}
-      <div className="px-3 py-2 d-flex align-items-center justify-content-between">
-        <div className="d-flex align-items-center">
-             <img src={Logo} className="logo" alt="Vite logo" style={{ width: '6rem', height: 'auto'}} />
-        </div>
-        <ThreeDotsVertical size={20} className="text-secondary" />
-      </div>
+    <div className="d-flex flex-column vh-100 bg-white main" style={{marginTop: '70px'}}>
 
       {/* Main Form Card */}
       <div className="flex-grow-1 d-flex justify-content-center align-items-center p-3">

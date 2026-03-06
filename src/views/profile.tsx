@@ -1,28 +1,29 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+// import { useNavigate } from 'react-router-dom';
 
 import { 
   PersonCircle, 
-  ThreeDotsVertical, ArrowRight 
+  ArrowRight 
 } from 'react-bootstrap-icons';
-import Logo from '/Logo-reviewit.png'; // Ensure this path is correct
 
 
 
 const ProfilePage: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleLogout = () => {
-    // Add your logout logic here (e.g., clearing tokens)
-    console.log("Logging out...");
-    navigate('/login'); // Redirect to login page
-  };
+  // const handleLogout = () => {
+  //   // Add your logout logic here (e.g., clearing tokens)
+  //   console.log("Logging out...");
+  //   navigate('/login'); // Redirect to login page
+  // };
 
   return (
-    <div className="d-flex flex-column vh-100 bg-white ">
+    <div className="d-flex flex-column vh-100 bg-white main" style={{marginTop: '70px'}}>
       
       {/* Top Header */}
-      <div className="px-3 py-2 d-flex align-items-center justify-content-between">
+      {/* <div className="px-3 py-2 d-flex align-items-center justify-content-between">
         <div className="d-flex align-items-center">
             <img src={Logo} className="logo" alt="Vite logo" style={{ width: '6rem', height: 'auto'}} />
         </div>
@@ -56,9 +57,9 @@ const ProfilePage: React.FC = () => {
               </button>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* <ThreeDotsVertical size={20} className="text-secondary" /> */}
-      </div>
+      {/* </div> */}
 
       {/* Profile Info Section */}
       <div className="flex-grow-1 d-flex flex-column align-items-center pt-5 px-4">
@@ -78,20 +79,23 @@ const ProfilePage: React.FC = () => {
 
         {/* Business Reviews Action Button */}
         <div className="mt-5 w-100 d-flex justify-content-center">
-          <button 
-            className="btn btn-primary d-flex align-items-center justify-content-between px-4 py-2 shadow"
-            style={{ 
-              backgroundColor: '#303395', 
-              border: 'none', 
-              borderRadius: '25px',
-              minWidth: '220px',
-              fontSize: '1.2rem'
-            }}
-          >
-            <span className="fw-bold">Business Reviews</span>
-            <ArrowRight size={20} className="ms-3" />
-          </button>
+          <NavLink to="/reviews" style={{textDecoration: 'none'}}>
+            <button 
+              className="btn btn-primary d-flex align-items-center justify-content-between px-4 py-2 shadow"
+              style={{ 
+                backgroundColor: '#303395', 
+                border: 'none', 
+                borderRadius: '25px',
+                minWidth: '220px',
+                fontSize: '1.2rem'
+              }}
+            >
+              <span className="fw-bold">Business Reviews</span>
+              <ArrowRight size={20} className="ms-3" />
+            </button>
+          </NavLink>
         </div>
+
       </div>
 
     </div>

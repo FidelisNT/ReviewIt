@@ -1,9 +1,8 @@
 import React from 'react';
 import { 
   PersonCircle, 
-  StarFill, Star, Heart, ThreeDotsVertical 
+  StarFill, Star, Heart 
 } from 'react-bootstrap-icons';
-import Logo from '/Logo-reviewit.png'; // Ensure this path is correct
 
 const ReviewsPage: React.FC = () => {
   // Mock data for the reviews list
@@ -14,18 +13,10 @@ const ReviewsPage: React.FC = () => {
   ];
 
   return (
-    <div className="d-flex flex-column vh-100 bg-white">
-      
-      {/* Header Section */}
-      <div className="px-3 d-flex align-items-center justify-content-between">
-        <div className="d-flex align-items-center">
-             <img src={Logo} className="logo" alt="Vite logo" style={{ width: '6rem', height: 'auto'}} />
-        </div>
-        <ThreeDotsVertical size={20} className="text-secondary" />
-      </div>
+    <div className="d-flex flex-column bg-white main" style={{marginTop: '70px'}}>
 
       {/* Profile/Business Header Area */}
-      <div className="text-center pb-4 px-3">
+      <div className="text-center py-4 px-3">
         <div className="mb-2">
           <PersonCircle size={100} className="text-dark" />
         </div>
@@ -40,7 +31,7 @@ const ReviewsPage: React.FC = () => {
       </div>
 
       {/* Scrollable Reviews List */}
-      <div className="flex-grow-1 overflow-auto mt-2">
+      <div className="flex-grow-1 mt-2">
         {reviews.map((rev) => (
           <div key={rev.id} className="px-3 mb-4">
             <div className="d-flex align-items-start pb-3 border-bottom">

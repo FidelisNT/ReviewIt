@@ -67,9 +67,9 @@ const LoginPage: React.FC = () => {
 
         {/* Decorative footer line like in the image */}
         <hr className="mt-5 mb-2" />
-        <div>Don't have an account? 
+        <div>Don't have an account?
           <Link to="/signup">
-            <div style={{ display: "inline" }}><a> Sign-in</a></div>
+            <div style={{ display: "inline", marginLeft: '5px' }}><a>Sign-up</a></div>
           </Link></div>
       </div>
     </div>

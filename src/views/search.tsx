@@ -14,7 +14,7 @@ const SearchPage: React.FC = () => {
   ];
 
   return (
-    <div className="d-flex flex-column vh-100 bg-white">
+    <div className="d-flex flex-column vh-100 bg-white main" style={{marginTop: '70px'}}>
       
       {/* Header Section with Logo and Options */}
       <div className="px-3 py-2 border-bottom d-flex align-items-center justify-content-between">
