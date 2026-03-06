@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
                             Create an account on ReviewIt and leave a review on businesses
                         </p>
                         <p>
-                            <NavLink className="btn btn-lg btn-primary" to="/signin">
+                            <NavLink className="btn btn-lg btn-primary" to="/signup">
                                 <div>Sign up today</div>
                             </NavLink>
                         </p>
@@ -90,8 +90,10 @@ const HomePage: React.FC = () => {
                 With your very own account, you are able to drop reviews of your experience with vendors you've interacted with,
                 commenting if their services are good, and if they are legitimate or fraudulent
             </p>
-              <p>
-                  <a className="btn btn-secondary" href="#">Sign in</a>
+                <p>
+                    <NavLink className="btn btn-primary" to="/login">
+                        <div>Sign in</div>
+                    </NavLink>
                 </p>
             </div>
             {/* <!-- /.col-lg-4 --> */}
@@ -106,7 +108,7 @@ const HomePage: React.FC = () => {
                     legitimate or fraudulent from one place
                 </p>
                 <p>
-                <a className="btn btn-secondary" href="#">View reviews »</a>
+                <a className="btn btn-primary" href="#search">View reviews »</a>
                 </p>
             </div>
             {/* <!-- /.col-lg-4 --> */}
@@ -121,7 +123,9 @@ const HomePage: React.FC = () => {
                     Create a vendor account now so your reviews can speak for your business.
                 </p>
                 <p>
-                    <a className="btn btn-secondary" href="#">Create Vendor</a>
+                    <NavLink className="btn btn-primary" to="/create-business">
+                        <div>Create Business</div>
+                    </NavLink>
                 </p>
             </div>
             {/* <!-- /.col-lg-4 --> */}
